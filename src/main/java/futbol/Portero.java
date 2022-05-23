@@ -19,7 +19,7 @@ public class Portero extends Futbolista{
 		return super.toString()+" con el dorsal "+dorsal+". Le han marcado "+golesRecibidos;
 	}
 	
-	public int compareTo(Futbolista f) {
+	public int compareTo(Object f) {
 		return Math.abs(golesRecibidos-((Portero)f).golesRecibidos);
 	}
 	
